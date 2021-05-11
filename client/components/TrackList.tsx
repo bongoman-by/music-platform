@@ -16,7 +16,6 @@ const TrackList: React.FC<TrackListProps> = ({ tracks }) => {
           ))}
         </Box>
       </Grid>
-      <Pagination count={tracks.length} />
     </Card>
   );
 };
