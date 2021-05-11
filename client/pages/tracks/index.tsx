@@ -1,4 +1,11 @@
-import { Box, Button, Card, Grid, TextField } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Card,
+  Grid,
+  Pagination,
+  TextField,
+} from "@material-ui/core";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -47,6 +54,7 @@ const Index = () => {
           </Box>
           <TextField fullWidth value={query} onChange={search} />
           <TrackList tracks={tracks} />
+          <Pagination count={tracks.length} />
         </Card>
       </Grid>
     </MainLayout>
